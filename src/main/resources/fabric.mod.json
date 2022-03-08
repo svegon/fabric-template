@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "${modid}",
+  "version": "${version}",
+
+  "name": "Example Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Svegon"
+  ],
+  "contact": {
+    "homepage": "https://github.com/svegon/fabric-template",
+    "sources": "https://github.com/svegon/fabric-template"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/${modid}/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.svegon.${modid}"
+    ]
+  },
+  "mixins": [
+    "${modid}.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": ">=${min_fabric_version}",
+    "minecraft": [
+      "1.18.x",
+      "1.17.x"
+    ],
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
